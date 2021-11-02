@@ -216,7 +216,8 @@ int main(){
     Print(pid, jobQ, readyQ, deviceQ);
 
     readyQ.Dequeue(pid);
-    jobQ.CurPCB(pid2);
+
+
     readyQ.Enqueue(pid2);
     cout << pid << " Process Running" << endl;
     cout << "Running: " << pid << endl;
